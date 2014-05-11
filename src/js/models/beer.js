@@ -1,16 +1,18 @@
 window.beerApp = (window.beerApp || {});
 window.beerApp.Beer = (function() {
+    "user strict";
 
     var nextId = 0;
 
 	var Beer = function( options ) {
 		var now = (new Date()).getTime();
+        var default_abv = 0;
 
         _.extend(this, {
             name: 'Beer',
             brewery: null,
             description: null,
-            abv: 0
+            abv: default_abv
         }, options);
 
         this.id = ++nextId;
