@@ -50,8 +50,6 @@ window.beerApp.IndexViewModel = (function($, Beer) {
         },
 
         addToFavorites: function( beer ) {
-            if (!beer) { return; }
-            
             this.favorites.push( beer );
         },
 
