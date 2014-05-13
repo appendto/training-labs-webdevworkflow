@@ -52,6 +52,16 @@ Web Developer's Toolbox Labs
       * Consider what else you may need to add to the `.jshintrc` file
       * Fix some of the jshint errors and try to get it to pass the jshint task cleanly
   * Add the `jshint` task to the list of `default` tasks
+  * Stage and commit your work
 
 2. __Minifying code with UglifyJS__
-  * 
+  * Add the `grunt-cotnrib-uglify` plugin to your application
+  * Add an `uglify` task to your Gruntfile
+      * Make it create a single file from all of your application JavaScript
+      * Make sure to _not_ include any vendor files, and to make `app.js` come first!
+  * Run your uglify task to confirm it works
+  * _If you have time_, Add the `sourceMap` option and make it create the source map file in the `dist/js/` directory
+      * _Notice anything off about your sourcemap? Think about where the files are being "sourced" from and written to._
+  * Add this task to your `default` task
+
+3. 
