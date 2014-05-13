@@ -7,12 +7,30 @@ module.exports = function( grunt ) {
 
     grunt.initConfig({
         copy: {
-            js: {
+            html: {
                 expand: true,
-                src: [ "js/**/*.js" ],
+                src: "index.html",
                 dest: "dist/",
                 cwd: "src/"
             },
+            js: {
+                expand: true,
+                src: [ "js/**/*.js", "!js/vendor/**/*.*" ],
+                dest: "dist/",
+                cwd: "src/"
+            },
+            jquery: {
+                expand: true,
+                src: "jquery.min.js",
+                dest: "dist/js/vendor/",
+                cwd: "src/js/vendor/jquery/dist/"
+            },
+            underscore: {
+                expand: true,
+                src: "underscore.js",
+                dest: "dist/js/vendor/",
+                cwd: "src/js/vendor/underscore/"
+            },            
             assets: {
                 expand: true,
                 src: [ "assets/*.*" ],
