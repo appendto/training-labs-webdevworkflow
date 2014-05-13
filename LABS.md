@@ -77,3 +77,4 @@ Web Developer's Toolbox Labs
   * Update the `index.html` file to point to the correct location for these files
       * _If you have extra time, consider how you might copy these files into the `dist/` directory and reference them there._
   * Stage and commit your work
+      * Make sure you don't commit `vendor` files!
