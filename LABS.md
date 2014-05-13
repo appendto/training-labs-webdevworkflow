@@ -10,9 +10,9 @@ Web Developer's Toolbox Labs
   * Clone the repository locally
   * Create a branch for your work today
   * Add a note in the README file
-  * Stage the new file
-  * Unstage the new file
-  * Stage the new file (again)
+  * Stage the changed README file (check `git status` to see what is staged)
+  * Unstage the README file (check `git status`)
+  * Stage the file (again)
   * Commit the change
   * View the commit log
   * Push to your repository (Optional, only if you did step 1)
