@@ -1,0 +1,10 @@
+{
+  "name": "beers",
+  "description": "A project about beer",
+  "author": "Brian Edgerton <bedgerton@appendto.com>",
+  "devDependencies": {
+      "grunt": "0.4.x",
+      "grunt-contrib-copy": "*",
+      "grunt-contrib-clean": "*"
+  }
+}
