@@ -35,3 +35,23 @@ Web Developer's Toolbox Labs
   * Merge this branch back into your branch from Task #1
   * View the commit log on your original branch
   * _If you have extra time_, add a `clean` task to remove the `dist` directory before doing the copy for the `default` task
+
+
+## Lab #2
+
+### Tasks
+
+1. __Preventing bugs with JSLint/Hint__
+  * Add JSHint to our node modules and re-install dependencies
+      * Try using this shortcut on the command line: `npm install grunt-contrib-jshint --save-dev`
+  * Create a `.jshintrc` file in the project root, add some jshint options there
+      * Be sure to at least add these:  
+      `{ "eqeqeq": true, "indent": 4, "lastsemic": false, "quotmark": true, "strict": true, "undef": true, }`
+  * Add a `jshint` config block to your Gruntfile
+  * Run `grunt jshint` and see what you get
+      * Consider what else you may need to add to the `.jshintrc` file
+      * Fix some of the jshint errors and try to get it to pass the jshint task cleanly
+  * Add the `jshint` task to the list of `default` tasks
+
+2. __Minifying code with UglifyJS__
+  * 
