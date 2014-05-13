@@ -63,5 +63,17 @@ Web Developer's Toolbox Labs
   * _If you have time_, Add the `sourceMap` option and make it create the source map file in the `dist/js/` directory
       * _Notice anything off about your sourcemap? Think about where the files are being "sourced" from and written to._
   * Add this task to your `default` task
+  * Stage and commit your work
 
-3. 
+3. __Mange front end dependencies with Bower__
+  * Install bower globally via `npm install -g bower`
+  * Add a `bower.json` file to the project root
+      * Add a `name` and `version`, then an empty `dependencies` object in that JSON file
+  * Create a `.bowerrc` file also in the project root
+      * Set the install directory for bower in this file: `{ "directory": "src/js/vendor" }`
+  * Install jquery and underscore via Bower
+      * You can either add them manually to the bower.json file, then run `bower install` from the command line...
+      * ... or you can run `bower install jquery --save-dev` from the command line (and similar for underscore)
+  * Update the `index.html` file to point to the correct location for these files
+      * _If you have extra time, consider how you might copy these files into the `dist/` directory and reference them there._
+  * Stage and commit your work
