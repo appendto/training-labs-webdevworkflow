@@ -10,7 +10,7 @@ Toolbox" (or "Web Developer's Workflow") training class given by
 The `master` branch of this repository holds the skeleton of a possible in-progress 
 front end project. The various other branches include possible solutions for 
 specific labs within the training course. Thus, if you were to simply look at the 
-`testing-with-qunit` branch you would see how the training content lab was 
+`lab-1-git-and-grunt` branch you would see how the training content lab was 
 implemented in the instructor's solution.
 
 There is also a `final-solution` branch which includes all completed lab content.
@@ -19,7 +19,7 @@ There is also a `final-solution` branch which includes all completed lab content
 
 Most branches use [Grunt](http://gruntjs.com) for task running, even though that 
 may not be the purpose of that particular lab. Thus you may want to tackle the 
-"Task Running with Grunt" lab first (the solution is in `task-running-with-grunt`).
+"Setting up Grunt" lab first (the solution is in `lab-1-git-and-grunt`).
 
 You can find all of the labs in the [LABS.md](LABS.md) file in this directory.
 

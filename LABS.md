@@ -5,7 +5,7 @@ Web Developer's Toolbox Labs
 
 ### Tasks
 
-1. __Get the lab project__
+1. __Getting the lab project__
   * Fork our skeleton project repository into your own Github account (Optional)
   * Clone the repository locally
   * Create a branch for your work today
@@ -17,7 +17,7 @@ Web Developer's Toolbox Labs
   * View the commit log
   * Push to your repository (Optional, only if you did step 1)
 
-2. __Set up Grunt__
+2. __Setting up Grunt__
   * Create a git branch for setting up Grunt
   * Create a `package.json` file for our Node modules
   * Create a `Gruntfile.js` for the tasks and config
