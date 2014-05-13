@@ -8,10 +8,10 @@ window.beerApp = (function() {
         this.debug = true;
 
         if (options.viewModel && typeof options.viewModel == 'function') {
-            this.activeViewModel = new options.viewModel();
-            this.activeViewModel.initialize((options.complete || function(){}).bind(this));
+          this.activeViewModel = new options.viewModel();
+          this.activeViewModel.initialize((options.complete || function(){}).bind(this));
         } else {
-            (options.complete || function() {}).bind(this)();
+          (options.complete || function() {}).bind(this)();
         }
     };
 
