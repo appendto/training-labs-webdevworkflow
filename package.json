@@ -3,8 +3,9 @@
   "description": "A project about beer",
   "author": "Brian Edgerton <bedgerton@appendto.com>",
   "devDependencies": {
-      "grunt": "0.4.x",
-      "grunt-contrib-copy": "*",
-      "grunt-contrib-clean": "*"
+    "grunt": "0.4.x",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-jshint": "^0.10.0"
   }
 }

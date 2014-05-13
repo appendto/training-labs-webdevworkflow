@@ -1,0 +1,16 @@
+{
+    // http://www.jshint.com/docs/
+    
+    "eqeqeq": true,
+    "indent": 4,
+    "lastsemic": false,
+    "quotmark": true,
+    "strict": true,
+    "undef": true,
+
+    "browser": true,
+    "globals": {
+        "_": true
+    }
+}
+

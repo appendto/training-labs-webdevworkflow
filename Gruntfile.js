@@ -2,6 +2,7 @@ module.exports = function( grunt ) {
 
     grunt.loadNpmTasks( "grunt-contrib-copy" );
     grunt.loadNpmTasks( "grunt-contrib-clean" );
+    grunt.loadNpmTasks( "grunt-contrib-jshint" );
 
     grunt.initConfig({
         copy: {
@@ -21,9 +22,19 @@ module.exports = function( grunt ) {
 
         clean: {
             files: [ "dist/" ]
-        }
+        },
+
+        jshint: {
+            options: {
+                jshintrc: '.jshintrc',
+                jshintignore: '.jshintignore'
+            },
+            files: {
+                src: [ "src/js/**/*.js" ]
+            }
+        },
     });
 
-    grunt.registerTask( "default", [ "clean", "copy" ] );
+    grunt.registerTask( "default", [ "clean", "jshint", "copy" ] );
 
 };

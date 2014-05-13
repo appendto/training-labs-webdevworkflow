@@ -1,6 +1,6 @@
 window.beerApp = (window.beerApp || {});
 window.beerApp.beerViewModel = (function($, Beer) {
-    "user strict";
+    "use strict";
     
     var BeerViewModel = function(beer) {
         this.beer = (beer instanceof Beer) || null;
