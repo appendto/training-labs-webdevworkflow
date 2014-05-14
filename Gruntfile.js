@@ -5,6 +5,7 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks( "grunt-contrib-jshint" );
     grunt.loadNpmTasks( "grunt-contrib-uglify" );
     grunt.loadNpmTasks( "grunt-contrib-qunit" );
+    grunt.loadNpmTasks( "grunt-sass" );
 
     grunt.initConfig({
         copy: {
@@ -79,6 +80,14 @@ module.exports = function( grunt ) {
             viewModels: {
                 options: {
                     urls: [ "specs/indexViewModel.html" ]
+                }
+            }
+        },
+
+        sass: {
+            screen: {
+                files: {
+                    "dist/css/screen.css": "src/sass/screen.scss"
                 }
             }
         }
