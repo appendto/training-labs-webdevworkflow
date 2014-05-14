@@ -78,3 +78,29 @@ Web Developer's Toolbox Labs
       * _If you have extra time, consider how you might copy these files into the `dist/` directory and reference them there._
   * Stage and commit your work
       * Make sure you don't commit `vendor` files!
+
+
+## Lab #3
+
+### Tasks
+
+1. __Setting up a QUnit test suite__
+  * Investigate the `beer-model.html` file in the `specs/` directory
+  * Create the test spec JavaScript file called `beer.model.spec.js` in the same directory
+  * Write a test for the basic Beer object model
+      * Make sure the deafult options are used if none are passed in
+      * Make sure the correct options are used if they are passed in
+      * Make sure the `toString` method works correctly
+  * Check the test results in the browser by loading that html file
+  * Stage and commit your changes
+
+2. __Create a new test file for the `indexViewModel`__
+  * modules and tests
+  
+3. __Set up test automation in Grunt__
+  * Install the `grunt-contrib-qunit` plugin via npm (_Make sure it gets added to `package.json`!_)
+  * Configure the `qunit` Grunt task to run all test files
+  * Run `grunt qunit` to test the results
+  * Add the `qunit` task to the `default` task
+  * Stage and commit your changes
+
