@@ -88,15 +88,28 @@ Web Developer's Toolbox Labs
   * Investigate the `beer-model.html` file in the `specs/` directory
   * Create the test spec JavaScript file called `beer.model.spec.js` in the same directory
   * Write a test for the basic Beer object model
-      * Make sure the deafult options are used if none are passed in
-      * Make sure the correct options are used if they are passed in
+      * Make sure the `Beer` object exists on the proper namespace (an `ok` check on `window.beerApp.Beer`)
+      * Make sure the deafult options are used if none are passed in (create a `Beer` with no options and check various properties)
+      * Make sure the correct options are used if they are passed in (create a `Beer` with custom options and check various properties)
       * Make sure the `toString` method works correctly
   * Check the test results in the browser by loading that html file
   * Stage and commit your changes
 
 2. __Create a new test file for the `indexViewModel`__
-  * modules and tests
-  
+  * Create a new test file for the `indexViewModel` in `specs/` (maybe called `indexViewModel.html`)
+      * You can use the `beer-model.html` file as a basis
+      * Be sure to include the proper source file!
+      * Be sure to create (and reference) a new JavaScript file for the tests! (maybe called `indexViewModel.spec.js`)
+  * Create a module for some basic tests surrounding creating an IndexViewModel (maybe called "IndexViewModel Creation")
+      * Ensure that the `IndexViewModel` object exists on the namespace
+      * Ensure that an IndexViewModel object can be created
+      * Ensure that the created view model has a beers array of length 0 and a favorites array of length 0
+  * Create a module for the "favorites" functionality
+      * Ensure that adding a favorites increases the size of the array
+      * Ensure that removing a favorite removes the correct entry from the array (_What assertion should you use?_)
+  * Check all of the results as you go
+  * Stage and commit your changes
+
 3. __Set up test automation in Grunt__
   * Install the `grunt-contrib-qunit` plugin via npm (_Make sure it gets added to `package.json`!_)
   * Configure the `qunit` Grunt task to run all test files
