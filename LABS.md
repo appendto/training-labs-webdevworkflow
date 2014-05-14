@@ -117,3 +117,9 @@ Web Developer's Toolbox Labs
   * Add the `qunit` task to the `default` task
   * Stage and commit your changes
 
+
+## Lab #4
+
+### Tasks
+
+1. __Styling the Beer App__
