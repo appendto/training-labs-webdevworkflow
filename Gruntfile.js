@@ -75,10 +75,15 @@ module.exports = function( grunt ) {
                 options: {
                     urls: [ "specs/beer-model.html" ]
                 }
+            },
+            viewModels: {
+                options: {
+                    urls: [ "specs/indexViewModel.html" ]
+                }
             }
         }
     });
 
-    grunt.registerTask( "default", [ "clean", "jshint", "copy", "uglify" ] );
+    grunt.registerTask( "default", [ "clean", "jshint", "qunit", "copy", "uglify" ] );
 
 };
