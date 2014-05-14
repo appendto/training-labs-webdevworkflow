@@ -123,3 +123,8 @@ Web Developer's Toolbox Labs
 ### Tasks
 
 1. __Styling the Beer App__
+  * Add the `grunt-sass` plugin
+  * Use variables to add some colors and positions to the elements using the `src/sass/screen.scss` file
+  * Using style nesting to override the paragraph styles in the footer
+  * Use a loop to style different beers differently (perhaps odd & even rows?)
+  * Play with mixins to see what you can do!
