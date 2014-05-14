@@ -55,7 +55,7 @@ window.beerApp.IndexViewModel = (function($, Beer) {
         },
 
         removeFromFavorites: function( beer ) {
-            this.favorites.remove( beer );
+            this.favorites = _.without(this.favorites, beer);
         },
 
         doSearch: function(cb) {
