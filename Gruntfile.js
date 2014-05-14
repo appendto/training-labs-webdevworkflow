@@ -4,6 +4,7 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks( "grunt-contrib-clean" );
     grunt.loadNpmTasks( "grunt-contrib-jshint" );
     grunt.loadNpmTasks( "grunt-contrib-uglify" );
+    grunt.loadNpmTasks( "grunt-contrib-qunit" );
 
     grunt.initConfig({
         copy: {
@@ -65,6 +66,14 @@ module.exports = function( grunt ) {
                         "dist/js/models/*.js",
                         "dist/js/viewModels/*.js"
                     ]
+                }
+            }
+        },
+
+        qunit: {
+            models: {
+                options: {
+                    urls: [ "specs/beer-model.html" ]
                 }
             }
         }
