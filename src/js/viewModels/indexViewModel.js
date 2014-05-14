@@ -26,7 +26,8 @@ window.beerApp.IndexViewModel = (function($, Beer) {
             }
 
             beerContent = _.map(this.beers, function(beer) {
-                return beer.toString();
+                var text = beer.toString();
+                return text.replace(/\(([^\)]+)\)/g, "<span class='note'>($1)</span>");
             });
 
             node.append("<li>" + beerContent.join('</li><li>') + "</li>");
