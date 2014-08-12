@@ -1,0 +1,109 @@
+// Variables
+@import "variables";
+
+// Mixins
+@import "mixins";
+
+// Base styles
+body {
+	margin: 0;
+	padding: 0;
+	color: $text;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	max-width: 75em;
+	margin: 0 auto;
+	padding: 1em;
+	overflow: hidden;
+}
+
+// Header
+.header {
+	background: $white;
+
+	img {
+		float: left;
+	}
+}
+
+.header-title {
+	margin: 1em 0 0 1em;
+	float: left;
+	font-size: 1.25em;
+
+	@include breakpoint(medium) {
+		margin: .625em 0 0 .625em;
+		font-size: 1.75em;
+	}
+}
+
+// Page title
+.page-title {
+	padding: .5em 0;
+	background: $grey;
+	color: $yellow;
+
+	@include breakpoint(medium) {
+		padding: 1.5em 0;
+	}
+}
+
+.pt-title {
+	margin: 0;
+	font-size: 1em;
+
+	@include breakpoint(medium) {
+		font-size: 1.25em;
+	}
+
+	@include breakpoint(large) {
+		font-size: 1.5em;
+	}
+}
+
+// Beer list
+.beer-list {
+	float: left;
+	margin: 2em 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		float: left;
+		width: 100%;
+		margin: 0 0 1em;
+		text-align: center;
+	}
+
+	@include breakpoint(medium) {
+		margin: 4em -1.25%;
+
+		li {
+			width: 22.5%;
+			margin: 0 1.25%;
+			text-align: left;
+		}
+	}
+}
+
+// Footer
+.footer {
+	background: $grey;
+	padding: .125em 0;
+
+	p {
+		margin: 0;
+		text-align: center;
+		color: $white;
+	}
+
+	a {
+		color: $white;
+	}
+
+	@include breakpoint(medium) {
+		padding: .5em 0;
+	}
+}

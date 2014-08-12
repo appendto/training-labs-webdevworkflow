@@ -8,24 +8,28 @@
 
   <body>
     <div id="wrapper">
-      
-      <header>
-        <h1 class="title">Beers with Friends</h1>
-        <img src="assets/beers.png">
+      <header class="header">
+        <div class="container">
+          <img src="assets/beers.png" width="100">
+          <h1 class="header-title">Beers with Friends</h1>
+        </img>
       </header>
 
-      <div id="content">
+      <section id="pageTitle" class="page-title">
+        <div class="container">
+          <h2 class="pt-title">An app for sharing beers with friends</h2>
+        </div>
+      </section><!-- #pageTitle -->
 
-        <p>An app for sharing beers with friends. By <a href="http://appendto.com">appendTo</a>.</p>
+      <section id="content" class="container">
+        <ul id="beerList" class="beer-list"><ul>
+      </section> <!-- #content -->
 
-        <ul id="beerList"><ul>
-
-      </div> <!-- #content -->
-
-      <footer>
-        <p>&copy; appendTo 2014</p>
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; <a href="http://appendto.com">appendTo</a> 2014</p>
+        </div>
       </footer>
-
     </div> <!-- #wrapper -->
     
     <script src="js/vendor/underscore.js"></script>

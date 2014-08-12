@@ -93,6 +93,6 @@ module.exports = function( grunt ) {
         }
     });
 
-    grunt.registerTask( "default", [ "clean", "jshint", "qunit", "copy", "uglify" ] );
+    grunt.registerTask( "default", [ "clean", "jshint", "qunit", "copy", "uglify", "sass" ] );
 
 };
