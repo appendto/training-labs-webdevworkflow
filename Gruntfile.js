@@ -37,6 +37,12 @@ module.exports = function( grunt ) {
                 src: [ "assets/*.*" ],
                 dest: "dist/",
                 cwd: "src/"
+            },
+            data: {
+                expand: true,
+                src: [ "*.json" ],
+                dest: "dist/",
+                cwd: "src/"
             }
         },
 
