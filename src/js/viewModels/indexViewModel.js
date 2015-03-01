@@ -11,7 +11,7 @@ window.beerApp.IndexViewModel = (function($, Beer) {
 
     _.extend(IndexViewModel.prototype, {
         initialize: function(cb) {
-            this.doSearch((function(beers) {
+            this.doSearch(null, 10, (function(beers) {
                 this.beers = this.parse(beers);
                 cb();
             }).bind(this));
@@ -59,36 +59,8 @@ window.beerApp.IndexViewModel = (function($, Beer) {
             this.favorites = _.without(this.favorites, beer);
         },
 
-        doSearch: function(cb) {
-            // Let's pretend we do an ajax call here for the beers
-            setTimeout(function() {
-                cb([
-                    {
-                        name: "Monkey King",
-                        brewery: "New Holland",
-                        description: "Saison",
-                        abv: 6.6
-                    },
-                    {
-                        name: "Lily Flagg",
-                        brewery: "Straight to Ale",
-                        description: "Milk Stout",
-                        abv: 5
-                    },
-                    {
-                        name: "Black Bavarian",
-                        brewery: "Sprecher",
-                        description: "Schwarzbier",
-                        abv: 6
-                    },
-                    {
-                        name: "Rye Stout",
-                        brewery: "Flat 12",
-                        description: "Stout",
-                        abv: null
-                    }
-                ]);
-            }, 300);
+        doSearch: function(query, limit, cb) {
+            return Beer.find(query, limit, cb);
         }
     });
 
