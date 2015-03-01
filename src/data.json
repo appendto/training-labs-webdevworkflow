@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Monkey King",
+        "brewery": "New Holland",
+        "description": "Saison",
+        "abv": 6.6
+    },
+    {
+        "name": "Lily Flagg",
+        "brewery": "Straight to Ale",
+        "description": "Milk Stout",
+        "abv": 5
+    },
+    {
+        "name": "Black Bavarian",
+        "brewery": "Sprecher",
+        "description": "Schwarzbier",
+        "abv": 6
+    },
+    {
+        "name": "Rye Stout",
+        "brewery": "Flat 12",
+        "description": "Stout",
+        "abv": null
+    },
+    {
+        "name": "Trappist 12",
+        "brewery": "Westvleteren",
+        "description": "Trippel",
+        "abv": 8
+    },
+    {
+        "name": "Anniversary IPA",
+        "brewery": "Yazoo",
+        "description": "White IPA",
+        "abv": 5.6
+    },
+    {
+        "name": "POTUS 44",
+        "brewery": "Black Abbey",
+        "description": "Stout",
+        "abv": 8.2
+    }
+]
