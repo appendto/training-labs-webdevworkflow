@@ -73,7 +73,7 @@ Web Developer's Toolbox Labs
       * Set the install directory for bower in this file: `{ "directory": "src/js/vendor" }`
   * Install jquery and underscore via Bower
       * You can either add them manually to the bower.json file, then run `bower install` from the command line...
-      * ... or you can run `bower install jquery --save-dev` from the command line (and similar for underscore)
+      * ... or you can run `bower install jquery --save` from the command line (and similar for underscore)
   * Update the `index.html` file to point to the correct location for these files
       * _If you have extra time, consider how you might copy these files into the `dist/` directory and reference them there._
   * Stage and commit your work
